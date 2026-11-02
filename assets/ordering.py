@@ -37,11 +37,14 @@ def sort_runs(lines: list[str]) -> list[str]:
     i = 0
     n = len(lines)
     in_code = False
+    in_toc = False  # the "## Contents" list keeps document order
     while i < n:
         line = lines[i]
         if line.strip().startswith("```"):
             in_code = not in_code
-        if in_code or not line.startswith("- "):
+        if line.startswith("## "):
+            in_toc = line.strip().lower().startswith("## contents")
+        if in_code or in_toc or not line.startswith("- "):
             out.append(line)
             i += 1
             continue

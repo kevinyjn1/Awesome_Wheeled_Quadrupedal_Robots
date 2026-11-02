@@ -12,17 +12,17 @@
 
 ## Contents
 
-- [Contributing](#contributing)
-- [GitHub 💻](#github-)
 - [Good to start 🧐](#good-to-start-)
-- [Labs & Companies 👥](#labs--companies-)
-- [License](#license)
-- [Papers 📑](#papers-)
-- [Related Materials 🔗](#related-materials-)
-- [Talks, Workshops & Tutorials 🎤](#talks-workshops--tutorials-)
-- [Timeline 🕰️](#timeline-️)
+- [Timeline 📅](#timeline-)
 - [Wheeled-Legged Quadrupeds 🛞🐕](#wheeled-legged-quadrupeds-)
+- [Papers 📑](#papers-)
+- [GitHub 💻](#github-)
 - [YouTube 🎥](#youtube-)
+- [Labs & Companies 👥](#labs--companies-)
+- [Talks, Workshops & Tutorials 🎤](#talks-workshops--tutorials-)
+- [Related Materials 🔗](#related-materials-)
+- [Contributing](#contributing)
+- [License](#license)
 
 ---
 ## Good to start 🧐
@@ -41,7 +41,7 @@
 
 ---
 
-## Timeline 🕰️
+## Timeline 📅
 
 *Milestones of wheeled-legged quadrupeds (chronological).*
 
@@ -53,12 +53,12 @@
 | 2015 | Univ. of Bonn's **Momaro** (4 legs, 2 steerable wheels each) and JPL's **RoboSimian** compete in the DARPA Robotics Challenge Finals (4th and 5th). The EU **CENTAURO** project (IIT + Bonn, 2015–2018) builds a wheeled-legged quadruped with a humanoid torso. |
 | 2016 | DFKI's **SherpaTT** wheel-on-leg rover begins Mars-analogue field campaigns. |
 | 2018 | ETH Zürich RSL puts non-steerable torque-controlled wheels on **ANYmal** — *Skating with a Force Controlled Quadrupedal Robot* (IROS 2018) and *Keep Rollin'* (RA-L 2019). ETH CRL's **Skaterbots** (SIGGRAPH) co-design legged-wheeled creatures. |
-| 2019–20 | *Rolling in the Deep*: online TO for hybrid walking–driving. Wheeled ANYmal enters the DARPA SubT Urban Circuit. |
-| 2021 | Tencent Robotics X unveils **Max** (wheels on the knees, 25 km/h); Hyundai shows **TIGER X-1**; Bjelonic's PhD thesis; whole-body MPC + online gait sequence generation (IROS 2021). |
-| 2022 | **Swiss-Mile** spins out of ETH RSL. Kawasaki shows the rideable **Bex**; Tencent's **Max 2** balances on two wheels. First surveys of wheeled-legged robots (CLAWAR 2022). |
+| 2019–20 | *Rolling in the Deep*: online TO for hybrid walking–driving; trajectory optimisation with linearised ZMP constraints; terrain-aware TO on stairs and steps (RA-L 2019–20). |
+| 2021 | Tencent Robotics X unveils **Max** (wheels on the knees, 25 km/h); Hyundai shows **TIGER X-1**; Bjelonic's PhD thesis; whole-body MPC + online gait sequence generation (IROS 2021). **Swiss-Mile** spins out of ETH RSL to commercialise the wheeled ANYmal. |
+| 2022 | Kawasaki shows the rideable **Bex**; Tencent's **Max 2** balances on two wheels; Bonn puts driven wheels on a Mini Cheetah. First surveys of wheeled-legged robots (CLAWAR 2022). |
 | 2023 | **LimX Dynamics W1** (Sept) — China's first commercial wheeled quadruped; it later stands up as a 152 cm biped (2024). |
 | 2024 | **Unitree Go2-W** (Aug) and **B2-W** make wheeled quadrupeds affordable for labs. **DEEP Robotics Lynx** launches (Nov). *Learning Robust Autonomous Navigation and Locomotion for Wheeled-Legged Robots* appears in **Science Robotics**. Swiss-Mile raises $22M from Bezos Expeditions / HongShan. |
-| 2025 | Swiss-Mile → **RIVR**; delivery pilots with Evri (UK) and Veho (Austin). **Lynx M20** (Apr), **Unitree A2-W** (Aug), **MagicDog-W** (Jul), **DOBOT Rover X1** at ~$1k (Nov). **1st Workshop on Wheeled-Legged Robots** at IROS 2025 with an ANYmal-on-Wheels simulation competition. Wave of Go2-W / B2-W RL papers. |
+| 2025 | Swiss-Mile completes its rebrand to **RIVR**; delivery pilots with Evri (UK) and Veho (Austin). **Lynx M20** (Apr), **Unitree A2-W** (Aug), **MagicDog-W** (Jul), **DOBOT Rover X1** at ~$1k (Nov). **1st Workshop on Wheeled-Legged Robots** at IROS 2025 with an ANYmal-on-Wheels simulation competition. Wave of Go2-W / B2-W RL papers. |
 | 2026 | **Amazon acquires RIVR** (March). DEEP Robotics ships **Lynx M20S** (Apr) and **Lynx S10** (May); Unitree reveals **As2-W** (Jul); Robot.com announces **R-dog** (Aug); IIT's **KYON** adds bimanual arms to a wheel-legged quadruped. MDPI *Robotics* runs a special issue on wheeled-legged robot systems. |
 
 ---
@@ -73,18 +73,18 @@
 |---|---|---|---|---|---|
 | **A2-W** | Unitree (CN) | 2025 | feet | ~52 kg, 3 m/s (6 max), 25 kg continuous / 100 kg standing load, dual hot-swap batteries | [Official](https://www.unitree.com/A2-W) · [Launch](https://www.therobotreport.com/unitree-launches-a2-quadruped-equipped-with-front-and-rear-lidar/) |
 | **As2-W** | Unitree (CN) | 2026 | feet | 25 kg, 3.7 m/s (6 max), 16 kg walking / 150 kg static load, 80 cm obstacles, 45° slopes, IP54 | [Official](https://www.unitree.com/As2-W) · [Review](https://www.i-programmer.info/news/169-robotics/19030-unitree-as2-w-impressive-all-terrain-robot.html) |
-| **B2-W** | Unitree (CN) | 2024 | feet | ~85 kg, 15 km/h, 40 kg walking / 120 kg standing load, ~30 km range, IP67, −20…55 °C; the platform Swiss-Mile/RIVR and ETH's SRU project build on | [Official](https://www.unitree.com/b2-w) · [URDF](https://github.com/unitreerobotics/unitree_ros) |
+| **B2-W** | Unitree (CN) | 2024 | feet | ~85 kg, 15 km/h, 40 kg walking / 120 kg standing load, ~30 km range, IP67, −20…55 °C; Swiss-Mile's 2024 fleet and ETH's SRU navigation project were built on it | [Official](https://www.unitree.com/b2-w) · [URDF](https://github.com/unitreerobotics/unitree_ros) |
 | **Go2-W** | Unitree (CN) | 2024 | feet | ~18 kg, 2.5 m/s, 8 kg payload, 1.5–3 h, 70 cm climb; the most-used research wheeled quadruped in 2025–26 papers | [Official](https://www.unitree.com/go2-w) · [Launch](https://www.therobotreport.com/unitree-go2-quadruped-hits-the-road-with-new-wheels/) · [URDF](https://github.com/unitreerobotics/unitree_ros) |
+| **Genisom L1W** | ZSBot / zsibot (CN) | 2025 | feet | Wheel-legged quadruped; community ROS 2 driver | [ROS 2 driver](https://github.com/DarmawanRobotics/l1w_ros2) |
 | **Lynx** | DEEP Robotics (CN) | 2024 | feet | 30 kg, 5 m/s, 12 kg payload, 3 h / 15 km, 22 cm steps, 45° slopes, IP54, $17,999 | [Official](https://deeprobotics.cn/en/wap/deeproboticslynx.html) · [Launch](https://www.robotics247.com/article/deep_robotics_launches_lynx_all_terrain_off_road_robot/industries) |
 | **Lynx M20 / M20 Pro** | DEEP Robotics (CN) | 2025 | feet | 33 kg, 15 kg rated / 50 kg max payload, 80 cm single step, IP66, −20…55 °C, hot-swap batteries, symmetric joints (drives both ways) | [Official](https://www.deeprobotics.cn/en/wap/lynx.html) · [Launch](https://www.robotics247.com/article/deep_robotics_launches_lynx_m20_wheel_legged_robot_for_unstructured_environments) · [Models](https://github.com/DeepRoboticsLab/deep_robotics_model) · [RL](https://github.com/DeepRoboticsLab/rl_training) |
 | **Lynx M20S** | DEEP Robotics (CN) | 2026 | feet | Next-gen M20; model files in `deep_robotics_model` | [Press](https://www.accessnewswire.com/newsroom/en/industrial-and-manufacturing/deep-robotics-lynx-m20s-launched-breaking-the-performance-paradox-of-w-1167678) |
 | **Lynx S10 / S10 Pro** | DEEP Robotics (CN) | 2026 | feet | ≤20 kg, 8 m/s, 16 joints, 50 cm obstacles, 120 kg max load, IP66 | [Official](https://deeprobotics.cn/en/index/lynxs10.html) · [Launch](https://www.163.com/dy/article/KTFRC8P90514R9P4.html) |
 | **MagicDog-W** | MagicLab 魔法原子 (CN) | 2025 | feet | 22.5 kg, 3 m/s, 10 kg payload, 2–4 h, 7-inch pneumatic tires, 16+1 motors | [Official](https://www.magiclab.top/en/dog-w) · [Specs](https://www.magiclab.top/en/dog-w/DogTable) · [SDK](https://github.com/MagicLabRobotics/MagicDog_SDK) |
 | **R-dog** | Robot.com (US) | 2026 | feet | Delivery + advertising quadruped, FieldAI navigation stack; availability 2027 | [Official](https://www.robot.com/r-dog) · [News](https://newatlas.com/robotics/r-dog-quadruped-delivery-robot/) |
-| **RIVR One / RIVR Two** (ex-Swiss-Mile) | RIVR / Amazon (CH) | 2022– | feet | Last-mile delivery; stands upright on two wheels; Rivr Two: >60 lb compartment, 8.7 mph, climbs stairs; acquired by Amazon March 2026 | [Official](https://www.rivr.ai/) · [Acquisition](https://techcrunch.com/?p=3104295) |
+| **RIVR One / RIVR Two** (ex-Swiss-Mile) | RIVR / Amazon (CH) | 2021– | feet | Last-mile delivery; stands upright on two wheels; Rivr Two: >60 lb compartment, 8.7 mph, climbs stairs; acquired by Amazon March 2026 | [Official](https://www.rivr.ai/) · [Acquisition](https://techcrunch.com/?p=3104295) |
 | **Rover X1 (Pro Flex)** | DOBOT / INFFNI (CN) | 2025 | feet (swappable) | 21.5 kg, 3 m/s wheeled, 3–7 kg payload, ~$1,030 in China — cheapest wheel-foot quadruped | [Official](https://inffnitech.com/products/rover-x1) · [Launch](https://www.technode.com/2025/11/04/dobot-rover-x1-robot-dog-debuts-at-1030-carries-items-and-follows-for-filming/) · [SDK](https://github.com/Dobot-Team/dobot_quad_sdk) |
 | **W1** | LimX Dynamics (CN) | 2023 | feet | 40 kg, 16 DoF, 5.98 m/s, 15 kg payload, 4 h; stands up into a 152 cm biped in ≤1 s (2024) | [Official](https://limxdynamics.com/en/wheeled-quadruped-robot) · [Launch](https://www.limxdynamics.com/en/news/BK000028) · [Biped mode](https://www.limxdynamics.com/en/news/BK000034) |
-| **Genisom L1W** | ZSBot / zsibot (CN) | 2025 | feet | Wheel-legged quadruped; community ROS 2 driver | [ROS 2 driver](https://github.com/DarmawanRobotics/l1w_ros2) |
 </details>
 
 <details open>
@@ -94,11 +94,11 @@
 |---|---|---|---|---|---|
 | **ALPHRED** | UCLA RoMeLa (US) | 2020 | passive casters | Radially symmetric quadruped for package delivery | [Paper](https://doi.org/10.1109/LRA.2020.3007482) |
 | **ANYmal on Wheels (AoW)** | ETH Zürich RSL (CH) | 2018 | feet | Non-steerable torque-controlled wheels on ANYmal; 4 m/s, −83 % cost of transport vs legged; lineage → Swiss-Mile → RIVR | [Keep Rollin'](https://arxiv.org/abs/1809.03557) · [Model](https://github.com/leggedrobotics/wlr-competition-2025) |
+| **Bex** | Kawasaki Heavy Industries (JP) | 2022 | knees | Ibex-styled rideable robot, ~100 kg cargo, modular upper body | [News](https://www.engadget.com/kawasaki-bex-robot-203541844.html) |
 | **BJTUBOT** | Beijing Jiaotong Univ. (CN) | 2023 | feet | Side-mounted 5-DoF hybrid parallel legs, multi-mission earth rover | [Paper](https://link.springer.com/article/10.1007/s11465-022-0740-0) |
 | **CENTAURO** | IIT HHCM + Univ. Bonn (IT/DE) | 2018 | feet (steerable) | Four legs with steerable wheels + humanoid torso with two arms, 93 kg; EU H2020 disaster-response project | [Project](https://www.centauro-project.uni-bonn.de/) · [Paper](https://doi.org/10.1109/LRA.2019.2896758) · [ROS pkgs](https://github.com/ADVRHumanoids/iit-centauro-ros-pkg) |
 | **Elevate / TIGER X-1** | Hyundai Motor Group (KR/US) | 2019 / 2021 | feet (retractable leg-wheel units) | "Walking car" concepts; TIGER is an uncrewed cargo UMV designed with Autodesk generative design | [Official](https://www.hyundai.com/au/en/news/mobility/hyundai-motor-group-unveils-tiger-uncrewed-ultimate-mobility-vehicle-concept) |
 | **FLORES** | HKUST(GZ) (CN) | 2025 | feet | Reconfigured wheel-legged quadruped with hip-yaw front legs; open mechanical design | [Paper](https://arxiv.org/abs/2507.22345) · [Code+CAD](https://github.com/ZhichengSong6/FLORES) |
-| **Bex** | Kawasaki Heavy Industries (JP) | 2022 | knees | Ibex-styled rideable robot, ~100 kg cargo, modular upper body | [News](https://www.engadget.com/kawasaki-bex-robot-203541844.html) |
 | **KYON** | IIT HHCM (IT) | 2026 | feet (reconfigurable) | Semi-modular wheel-legged quadruped with swappable wheel/leg lower limbs and bimanual upper body | [Paper](https://arxiv.org/abs/2606.30243) |
 | **LEVA** | ETH Zürich RSL (CH) | 2025 | feet | High-mobility logistics vehicle with legged suspension, carries a standard Euro cargo box | [Paper](https://doi.org/10.1109/ICRA55743.2025.11128847) |
 | **Lywal** | — (CN) | 2021 | transformable | Leg-wheel transformable quadruped with pick-up and transport functions | [Paper](https://ieeexplore.ieee.org/document/9561128/) · [Video](https://www.youtube.com/watch?v=mtlygIGOYEE) |
