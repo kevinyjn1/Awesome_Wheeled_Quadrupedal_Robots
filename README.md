@@ -517,7 +517,7 @@
 - [Hirose–Fukushima / Endo Lab lineage, Tokyo Institute of Technology](https://www.robotics.mech.e.titech.ac.jp/gendo/en/?p=57) — Roller-Walker
 - [HKUST (Guangzhou) + Tsinghua AIR — wheel-legged loco-manipulation](https://acodedog.github.io/wheel-legged-loco-manipulation/) - [Github](https://github.com/aCodeDog)
 - [Humanoids & Human Centered Mechatronics (HHCM), IIT Genoa](https://hhcm.iit.it) - [Github](https://github.com/ADVRHumanoids) — CENTAURO, KYON
-- [MPC Lab, UC Berkeley (Francesco Borrelli)](https://sites.google.com/berkeley.edu/mpclab) — Go2-W racing MPC, RACER
+- [MPC Lab, UC Berkeley (Francesco Borrelli)](https://github.com/meisman-ucb/go2w-roll-control-mpc) — Go2-W racing MPC, RACER
 - [NASA JPL Robotics — RoboSimian](https://www-robotics.jpl.nasa.gov/how-we-do-it/systems/robosimian/)
 - [Robotic Systems Lab (RSL), ETH Zürich](https://rsl.ethz.ch/) - [Github](https://github.com/leggedrobotics) — ANYmal on wheels, Swiss-Mile lineage, SRU B2-W navigation, WLR workshop & competition organisers
   - [Marko Bjelonic](https://www.markobjelonic.com/) - [Github](https://github.com/mbjelonic) - [Scholar](https://scholar.google.com/citations?user=W7PnUfUAAAAJ&hl=en)
@@ -529,7 +529,7 @@
 
 <details><summary>China</summary>
 
-- [DEEP Robotics 云深处](https://www.deeprobotics.cn/en) — Lynx, Lynx M20 / M20 Pro / M20S, Lynx S10 - [Github](https://github.com/DeepRoboticsLab)
+- [DEEP Robotics 云深处](https://www.deeprobotics.cn/en/) — Lynx, Lynx M20 / M20 Pro / M20S, Lynx S10 - [Github](https://github.com/DeepRoboticsLab)
 - [DOBOT / INFFNI](https://inffnitech.com/products/rover-x1) — Rover X1 (Pro Flex wheel-foot variant)
 - [LimX Dynamics 逐际动力](https://limxdynamics.com/en/wheeled-quadruped-robot) — W1 - [Github](https://github.com/limxdynamics)
 - [MagicLab 魔法原子](https://www.magiclab.top/en/dog-w) — MagicDog-W - [Github](https://github.com/MagicLabRobotics)
